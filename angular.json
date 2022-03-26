@@ -76,6 +76,22 @@
           },
           "defaultConfiguration": "development"
         },
+        "o-n": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "ng-arab:build:production"
+            },
+            "development": {
+              "browserTarget": "ng-arab:build:development"
+            }
+          },
+          "options": {
+            "port":6200,
+            "open":true
+          },
+          "defaultConfiguration": "development"
+        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
