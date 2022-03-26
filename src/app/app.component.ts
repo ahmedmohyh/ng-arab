@@ -7,12 +7,15 @@ import { environment } from "src/environments/environment";
     template:`
     <p [style]="colors">hi my name is  {{this.name}} and my age is {{this.getAge()}}
       {{this.getAge() === 25 ? \'x' : 'y'}}</p>
-      <button type="button" (click)="doSomething()">do Someting</button>
+      <button type="button" (click)="doSomething()" [disabled]="!username">do Someting</button>
       <input [value]="username" (input)="username = $any($event.target).value"/>
-      <p> Your user name is {{this.username}}</p>
+      <p [style.color]="username ? 'blue':'green'"> Your user name is {{this.username}}</p>
+      <br>
+      <img src="{{imgSrc}}" height="50px" width="50px"/>
       `,
 })
 export class AppComponent{
+  imgSrc:string='https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?cs=srgb&dl=pexels-nextvoyage-1461974.jpg&fm=jpg';
   username:string = '';
   colors:string ='color:red';
   name:string = 'angualr';
