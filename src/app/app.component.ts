@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+//class el 3omal xD:
+import { Component } from "@angular/core";
+import { environment } from "src/environments/environment";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector:'app-root',
+    templateUrl: './app.component.html',
 })
-export class AppComponent {
-  title = 'ng-arab';
+export class AppComponent{
+    constructor(){
+    alert(`hi there i am in the ${environment.x} Mode`)
+    console.log(`i am in ${environment.x} mode`);
+    }
+
 }
