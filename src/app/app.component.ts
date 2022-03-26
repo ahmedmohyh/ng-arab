@@ -9,9 +9,9 @@ import { environment } from "src/environments/environment";
       {{this.getAge() === 25 ? \'x' : 'y'}}</p>
       <button type="button" (click)="doSomething()" [disabled]="!username">do Someting</button>
       <input [value]="username" (input)="username = $any($event.target).value"/>
-      <p [style.color]="username ? 'blue':'green'"> Your user name is {{this.username}}</p>
+      <p [style.color]="username ? 'blue':'green'">   Your user name is {{this.username}}</p>
       <br>
-      <img src="{{imgSrc}}" height="50px" width="50px"/>
+      <img [style]="username? 'height:30px;width:20px' : 'height:50px;width:40px'" src="{{imgSrc}}" />
       `,
 })
 export class AppComponent{
