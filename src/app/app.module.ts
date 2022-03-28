@@ -4,13 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppFormsComponent } from './app.FormsComponent';
+import { AppForComponent } from './app.ForComponent';
+import { ngSwitchComponent } from './app.ngSwtichComponent';
 
 @NgModule({
     declarations:[
         AppComponent,
-        AppFormsComponent
+        AppFormsComponent,
+        AppForComponent,
+        ngSwitchComponent
     ],
     imports:[BrowserModule,FormsModule],
-    bootstrap:[AppFormsComponent]
+    bootstrap:[ngSwitchComponent]
 })
 export class AppModule{}
