@@ -7,7 +7,7 @@ interface Student{
 }
 @Component({
     selector:'app-root',
-    templateUrl:'./app.component.html',
+    template:``,
 })
 export class AppForComponent{
  students:Array<Student>;

@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { AppFormsComponent } from './app.FormsComponent';
 import { AppForComponent } from './app.ForComponent';
 import { ngSwitchComponent } from './app.ngSwtichComponent';
+import { ItemComponent } from './item/item.component';
+import { ItemDetailsComponent } from './item-details/item-details.component';
 
 @NgModule({
     declarations:[
         AppComponent,
         AppFormsComponent,
         AppForComponent,
-        ngSwitchComponent
+        ngSwitchComponent,
+        ItemComponent,
+        ItemDetailsComponent
     ],
     imports:[BrowserModule,FormsModule],
     bootstrap:[ngSwitchComponent]

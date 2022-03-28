@@ -7,3 +7,24 @@ Refresh
     {{student.id}} - {{student.name}} - {{i}}
   </li>
 </ul> -->
+
+
+
+<!-- <div *ngFor="let color of colors; let i = index">
+  <label for="color_{{i}}">
+    {{color}}
+  </label>
+  <input type="radio"
+  [value]="color"
+  [(ngModel)]="selectedColor"
+  id="color_{{i}}"
+  />
+</div>
+<div [ngSwitch]="selectedColor">
+  <p *ngSwitchCase="'red'">You have selected the color red</p>
+  <p *ngSwitchCase="'green'">You have selected the color green</p>
+  <p *ngSwitchCase="'blue'">You have selected the color blue</p>
+  <p *ngSwitchDefault>You haven't selected any color yet</p>
+</div> -->
+
+<input type="text" #phone/>
