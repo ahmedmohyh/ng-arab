@@ -1,3 +1,7 @@
-<p>item-details works! and the title is {{itemTitleChild}}</p>
+<!-- <p>item-details works! and the title is {{itemTitleChild}}</p>
 
-<button (click)="pushEvent()">Push Event</button>
+<button (click)="pushEvent()">Push Event</button> -->
+
+<input type="text" (keyup)="titleChange.emit( $any($event.target).value)" [value]="title" />
+
+<p>the title in child is {{title}}</p>

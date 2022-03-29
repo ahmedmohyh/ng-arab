@@ -1,10 +1,11 @@
 <p>item works!</p>
-<input type="text" (keyup)="itemtitleinParent = $any($event.target).value"/>
+<input type="text" (keyup)="title = $any($event.target).value" [value]="title"/>
+data from child is {{title}}
+<hr>
 <app-item-details
-[itemTitleChild] ="itemtitleinParent"
-#mychild
-(eventFromChild)="pushedFromChild = $event"
+[title]="title"
+(titleChange)="title = $event"
 ></app-item-details>
 
-<p>the pushed data from child is: {{pushedFromChild}}</p>
+
 
