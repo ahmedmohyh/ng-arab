@@ -5,7 +5,7 @@ import { environment } from "src/environments/environment";
 
 @Component({
     selector:'app-root',
-    templateUrl :'./app.component.html',
+    template :``,
 })
 export class ngSwitchComponent{
 /*   colors:Array<string>;

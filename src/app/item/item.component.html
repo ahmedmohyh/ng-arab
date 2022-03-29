@@ -1,1 +1,3 @@
 <p>item works!</p>
+<input type="text" (keyup)="itemtitleinParent = $any($event.target).value"/>
+<app-item-details [itemTitleChild] ="itemtitleinParent" #mychild></app-item-details>

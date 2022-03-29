@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-item-details',
   templateUrl: './item-details.component.html',
   styleUrls: ['./item-details.component.css']
 })
-export class ItemDetailsComponent implements OnInit {
-
+export class ItemDetailsComponent  {
+  @Input()
+  itemTitleChild!: string;
   constructor() { }
-
-  ngOnInit(): void {
+  setTitle(title:string){
+    console.log(`the title is ${title}`);
   }
+
 
 }

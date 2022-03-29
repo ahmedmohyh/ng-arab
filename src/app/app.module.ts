@@ -19,6 +19,6 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
         ItemDetailsComponent
     ],
     imports:[BrowserModule,FormsModule],
-    bootstrap:[ngSwitchComponent]
+    bootstrap:[AppForComponent]
 })
 export class AppModule{}
