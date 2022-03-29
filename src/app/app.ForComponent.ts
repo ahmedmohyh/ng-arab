@@ -30,4 +30,8 @@ export class AppForComponent{
 return student.id;
 
  }
+ log(event:KeyboardEvent){
+  console.log(event);
+
+}
 }

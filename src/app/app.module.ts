@@ -8,6 +8,7 @@ import { AppForComponent } from './app.ForComponent';
 import { ngSwitchComponent } from './app.ngSwtichComponent';
 import { ItemComponent } from './item/item.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
+import { SvgComponent } from './svg/svg.component';
 
 @NgModule({
     declarations:[
@@ -16,7 +17,8 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
         AppForComponent,
         ngSwitchComponent,
         ItemComponent,
-        ItemDetailsComponent
+        ItemDetailsComponent,
+        SvgComponent
     ],
     imports:[BrowserModule,FormsModule],
     bootstrap:[AppForComponent]
