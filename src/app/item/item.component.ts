@@ -7,7 +7,8 @@ import { Component, ViewChild } from '@angular/core';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent  {
-itemtitleinParent:string = '';
+  pushedFromChild: string = '';
+  itemtitleinParent:string = '';
   @ViewChild('mychild')
   mychild!: ItemDetailsComponent;
   constructor() {
